@@ -11,7 +11,7 @@ while (true) {
     diameter = game.askForNumber("Enter the pizza's diameter ( inches ):")
     subtotal = LABOUR_COST + RENT_COST + MATERIAL_COST * diameter
     tax = subtotal * HST
-    total = Math.floor((subtotal + tax) / 0.01) / 100
+    total = Math.round((subtotal + tax) / 0.01) / 100
     game.splash("The total cost of the pizza is $" + total + "!")
     game.splash("Another Pizza?")
 }
